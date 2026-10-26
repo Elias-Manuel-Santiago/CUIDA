@@ -1,0 +1,9 @@
+{
+  "name": "GY-NEO6MV2 serial model (synthetic route)",
+  "author": "CUIDA prototype",
+  "pins": ["VCC", "GND", "TX", "RX"],
+  "controls": [
+    {"id": "speedKmh", "label": "Speed (km/h)", "type": "range", "min": 0, "max": 140, "step": 1},
+    {"id": "fixValid", "label": "GPS fix: 0 lost / 1 valid", "type": "range", "min": 0, "max": 1, "step": 1}
+  ]
+}

@@ -1,0 +1,15 @@
+test_fritzing_archive_references_and_reciprocity (test_circuit.CircuitTests.test_fritzing_archive_references_and_reciprocity) ... ok
+test_power_and_signals_match_firmware_without_shorts (test_circuit.CircuitTests.test_power_and_signals_match_firmware_without_shorts) ... ok
+test_alert_retained_when_queue_overflows (test_prototype.PrototypeTests.test_alert_retained_when_queue_overflows) ... ok
+test_alternating_lateral_forces_do_not_cancel (test_prototype.PrototypeTests.test_alternating_lateral_forces_do_not_cancel) ... ok
+test_gps_checksum_fragmentation_void_and_stale (test_prototype.PrototypeTests.test_gps_checksum_fragmentation_void_and_stale) ... ok
+test_http_server_error_keeps_payload_for_retry (test_prototype.PrototypeTests.test_http_server_error_keeps_payload_for_retry) ... ok
+test_malformed_uart_noise_does_not_crash_transport (test_prototype.PrototypeTests.test_malformed_uart_noise_does_not_crash_transport) ... ok
+test_mpu_scaling_and_negative_acceleration (test_prototype.PrototypeTests.test_mpu_scaling_and_negative_acceleration) ... ok
+test_replay_expected_driving_and_sensor_failures (test_prototype.PrototypeTests.test_replay_expected_driving_and_sensor_failures) ... ok
+test_sampling_gap_is_not_counted_as_observed_driving (test_prototype.PrototypeTests.test_sampling_gap_is_not_counted_as_observed_driving) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.071s
+
+OK

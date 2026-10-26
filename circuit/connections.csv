@@ -1,0 +1,23 @@
+From component,From pin,To component,To pin,Signal
+power,5V,breadboard,5V_1,5V
+power,GND,breadboard,GND_BOTTOM_45,GND
+breadboard,GND_TOP_1,breadboard,GND_BOTTOM_1,GND
+breadboard,5V_20,breadboard,a30,5V
+breadboard,GND_TOP_19,breadboard,a29,GND
+breadboard,j30,breadboard,3V3_20,3V3
+breadboard,j29,breadboard,GND_BOTTOM_20,GND
+mpu6050,VCC,breadboard,3V3_35,3V3
+mpu6050,GND,breadboard,GND_TOP_35,GND
+mpu6050,AD0,breadboard,GND_TOP_36,GND
+mpu6050,SDA,breadboard,j20,SDA GPIO21
+mpu6050,SCL,breadboard,j17,SCL GPIO22
+gps,VCC,breadboard,5V_35,5V
+gps,GND,breadboard,GND_BOTTOM_35,GND
+gps,TX,breadboard,a25,GPS TX to ESP RX27
+gps,RX,breadboard,a24,ESP TX26 to GPS RX
+modem,VIN,breadboard,5V_45,5V
+modem,GND,breadboard,GND_TOP_45,GND
+modem,TXD,breadboard,j25,MODEM TX to ESP RX16
+modem,RXD,breadboard,j24,ESP TX17 to MODEM RX
+capacitor,+,modem,VIN,5V / capacitor +
+capacitor,-,modem,GND,GND / capacitor -

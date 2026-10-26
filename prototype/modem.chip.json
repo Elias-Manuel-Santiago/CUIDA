@@ -1,0 +1,8 @@
+{
+  "name": "A7670SA board UART emulator - NO actual 4G",
+  "author": "CUIDA prototype",
+  "pins": ["VIN", "GND", "TXD", "RXD"],
+  "controls": [
+    {"id": "connected", "label": "Network: 0 offline / 1 online", "type": "range", "min": 0, "max": 1, "step": 1}
+  ]
+}

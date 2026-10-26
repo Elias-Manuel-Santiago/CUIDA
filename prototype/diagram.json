@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "CUIDA prototype",
+  "editor": "wokwi",
+  "parts": [
+    {"type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 50, "left": 20, "attrs": {"env": "micropython-20260406-v1.28.0"}},
+    {"type": "wokwi-mpu6050", "id": "mpu", "top": 45, "left": 330, "attrs": {"accelZ": "1"}},
+    {"type": "chip-gps", "id": "gps", "top": 235, "left": 330, "attrs": {"speedKmh": "32", "fixValid": "1"}},
+    {"type": "chip-modem", "id": "modem", "top": 410, "left": 330, "attrs": {"connected": "1"}}
+  ],
+  "connections": [
+    ["esp:TX0", "$serialMonitor:RX", "", []],
+    ["esp:RX0", "$serialMonitor:TX", "", []],
+    ["esp:3V3", "mpu:VCC", "red", []],
+    ["esp:GND.1", "mpu:GND", "black", []],
+    ["esp:D21", "mpu:SDA", "green", []],
+    ["esp:D22", "mpu:SCL", "blue", []],
+    ["esp:GND.1", "mpu:AD0", "black", []],
+    ["esp:VIN", "gps:VCC", "red", []],
+    ["esp:GND.1", "gps:GND", "black", []],
+    ["esp:D27", "gps:TX", "orange", []],
+    ["esp:D26", "gps:RX", "purple", []],
+    ["esp:VIN", "modem:VIN", "red", []],
+    ["esp:GND.2", "modem:GND", "black", []],
+    ["esp:RX2", "modem:TXD", "orange", []],
+    ["esp:TX2", "modem:RXD", "purple", []]
+  ],
+  "serialMonitor": {"display": "always", "newline": "lf"}
+}
